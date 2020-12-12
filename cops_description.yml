@@ -1,0 +1,640 @@
+Bundler/DuplicatedGem: 'Checks for duplicate gem entries in Gemfile.'
+Bundler/GemComment: 'Add a comment describing each gem.'
+Bundler/InsecureProtocolSource: "The source `:gemcutter`, `:rubygems` and `:rubyforge` are deprecated because HTTP requests are insecure. Please change your source to 'https://rubygems.org' if possible, or 'http://rubygems.org' if not."
+Bundler/OrderedGems: "Gems within groups in the Gemfile should be alphabetically sorted."
+Gemspec/DuplicatedAssignment: 'An attribute assignment method calls should be listed only once in a gemspec.'
+Gemspec/OrderedDependencies: "Dependencies in the gemspec should be alphabetically sorted."
+Gemspec/RequiredRubyVersion: 'Checks that `required_ruby_version` of gemspec is specified and equal to `TargetRubyVersion` of .rubocop.yml.'
+Gemspec/RubyVersionGlobalsUsage: "Checks usage of RUBY_VERSION in gemspec."
+Layout/AccessModifierIndentation: "Check indentation of private/protected visibility modifiers."
+Layout/ArgumentAlignment: "Align the arguments of a method call if they span more than one line."
+Layout/ArrayAlignment: "Align the elements of an array literal if they span more than one line."
+Layout/BeginEndAlignment: 'Align ends corresponding to begins correctly.'
+Layout/BlockAlignment: 'Align block ends correctly.'
+Layout/BlockEndNewline: 'Put end statement of multiline block on its own line.'
+Layout/CaseIndentation: 'Indentation of when in a case/when/[else/]end.'
+Layout/ClassStructure: 'Enforces a configured order of definitions within a class body.'
+Layout/ClosingHeredocIndentation: 'Checks the indentation of here document closings.'
+Layout/ClosingParenthesisIndentation: 'Checks the indentation of hanging closing parentheses.'
+Layout/ConditionPosition: "Checks for condition placed in a confusing position relative to the keyword."
+Layout/DefEndAlignment: 'Align ends corresponding to defs correctly.'
+Layout/DotPosition: 'Checks the position of the dot in multi-line method calls.'
+Layout/EmptyLineAfterMagicComment: 'Add an empty line after magic comments to separate them from code.'
+Layout/EmptyLineAfterMultilineCondition: 'Enforces empty line after multiline condition.'
+Layout/EmptyLines: "Don't use several empty lines in a row."
+Layout/EmptyLinesAroundAccessModifier: "Keep blank lines around access modifiers."
+Layout/EmptyLinesAroundAttributeAccessor: "Keep blank lines around attribute accessors."
+Layout/EmptyLinesAroundBeginBody: "Keeps track of empty lines around begin-end bodies."
+Layout/EmptyLinesAroundBlockBody: "Keeps track of empty lines around block bodies."
+Layout/EmptyLinesAroundClassBody: "Keeps track of empty lines around class bodies."
+Layout/EmptyLinesAroundExceptionHandlingKeywords: "Keeps track of empty lines around exception handling keywords."
+Layout/EmptyLinesAroundMethodBody: "Keeps track of empty lines around method bodies."
+Layout/EmptyLinesAroundModuleBody: "Keeps track of empty lines around module bodies."
+Layout/EndAlignment: 'Align ends correctly.'
+Layout/EndOfLine: 'Use Unix-style line endings.'
+Layout/ExtraSpacing: 'Do not use unnecessary spacing.'
+Layout/FirstArgumentIndentation: 'Checks the indentation of the first argument in a method call.'
+Layout/FirstArrayElementIndentation: "Checks the indentation of the first element in an array literal."
+Layout/FirstArrayElementLineBreak: "Checks for a line break before the first element in a multi-line array."
+Layout/FirstHashElementIndentation: 'Checks the indentation of the first key in a hash literal.'
+Layout/FirstHashElementLineBreak: "Checks for a line break before the first element in a multi-line hash."
+Layout/FirstMethodArgumentLineBreak: "Checks for a line break before the first argument in a multi-line method call."
+Layout/FirstMethodParameterLineBreak: "Checks for a line break before the first parameter in a multi-line method parameter definition."
+Layout/FirstParameterIndentation: "Checks the indentation of the first parameter in a method definition."
+Layout/HashAlignment: "Align the elements of a hash literal if they span more than one line."
+Layout/HeredocArgumentClosingParenthesis: "Checks for the placement of the closing parenthesis in a method call that passes a HEREDOC string as an argument."
+Layout/HeredocIndentation: 'This cop checks the indentation of the here document bodies.'
+Layout/IndentationConsistency: 'Keep indentation straight.'
+Layout/IndentationStyle: 'Consistent indentation either with tabs only or spaces only.'
+Layout/IndentationWidth: 'Use 2 spaces for indentation.'
+Layout/LeadingCommentSpace: 'Comments should start with a space.'
+Layout/LeadingEmptyLines: "Check for unnecessary blank lines at the beginning of a file."
+Layout/LineLength: 'Checks that line length does not exceed the configured limit.'
+Layout/MultilineArrayBraceLayout: "Checks that the closing brace in an array literal is either on the same line as the last array element, or a new line."
+Layout/MultilineArrayLineBreaks: "Checks that each item in a multi-line array literal starts on a separate line."
+Layout/MultilineAssignmentLayout: 'Check for a newline after the assignment operator in multi-line assignments.'
+Layout/MultilineBlockLayout: 'Ensures newlines after multiline block do statements.'
+Layout/MultilineHashBraceLayout: "Checks that the closing brace in a hash literal is either on the same line as the last hash element, or a new line."
+Layout/MultilineHashKeyLineBreaks: "Checks that each item in a multi-line hash literal starts on a separate line."
+Layout/MultilineMethodCallBraceLayout: "Checks that the closing brace in a method call is either on the same line as the last method argument, or a new line."
+Layout/MultilineMethodCallIndentation: "Checks indentation of method calls with the dot operator that span more than one line."
+Layout/MultilineMethodDefinitionBraceLayout: "Checks that the closing brace in a method definition is either on the same line as the last method parameter, or a new line."
+Layout/MultilineOperationIndentation: "Checks indentation of binary operations that span more than one line."
+Layout/ParameterAlignment: "Align the parameters of a method definition if they span more than one line."
+Layout/RescueEnsureAlignment: 'Align rescues and ensures correctly.'
+Layout/SpaceAfterComma: 'Use spaces after commas.'
+Layout/SpaceAfterMethodName: "Do not put a space between a method name and the opening parenthesis in a method definition."
+Layout/SpaceAfterNot: "Tracks redundant space after the ! operator."
+Layout/SpaceAfterSemicolon: 'Use spaces after semicolons.'
+Layout/SpaceAroundBlockParameters: 'Checks the spacing inside and after block parameters pipes.'
+Layout/SpaceAroundKeyword: 'Use a space around keywords if appropriate.'
+Layout/SpaceAroundMethodCallOperator: 'Checks method call operators to not have spaces around them.'
+Layout/SpaceAroundOperators: 'Use a single space around operators.'
+Layout/SpaceBeforeBlockBraces: "Checks that the left block brace has or doesn't have space before it."
+Layout/SpaceBeforeComma: 'No spaces before commas.'
+Layout/SpaceBeforeComment: "Checks for missing space between code and a comment on the same line."
+Layout/SpaceBeforeFirstArg: "Checks that exactly one space is used between a method name and the first argument for method calls without parentheses."
+Layout/SpaceBeforeSemicolon: 'No spaces before semicolons.'
+Layout/SpaceInLambdaLiteral: 'Checks for spaces in lambda literals.'
+Layout/SpaceInsideArrayLiteralBrackets: 'Checks the spacing inside array literal brackets.'
+Layout/SpaceInsideArrayPercentLiteral: 'No unnecessary additional spaces between elements in %i/%w literals.'
+Layout/SpaceInsideBlockBraces: "Checks that block braces have or don't have surrounding space. For blocks taking parameters, checks that the left brace has or doesn't have trailing space."
+Layout/SpaceInsideHashLiteralBraces: "Use spaces inside hash literal braces - or don't."
+Layout/SpaceInsideParens: 'No spaces after ( or before ).'
+Layout/SpaceInsidePercentLiteralDelimiters: 'No unnecessary spaces inside delimiters of %i/%w/%x literals.'
+Layout/SpaceInsideRangeLiteral: 'No spaces inside range literals.'
+Layout/SpaceInsideReferenceBrackets: 'Checks the spacing inside referential brackets.'
+Layout/SpaceInsideStringInterpolation: 'Checks for padding/surrounding spaces inside string interpolation.'
+Layout/TrailingEmptyLines: 'Checks trailing blank lines and final newline.'
+Layout/TrailingWhitespace: 'Avoid trailing whitespace.'
+Lint/AmbiguousBlockAssociation: "Checks for ambiguous block association with method when param passed without parentheses."
+Lint/AmbiguousOperator: "Checks for ambiguous operators in the first argument of a method invocation without parentheses."
+Lint/AmbiguousRegexpLiteral: "Checks for ambiguous regexp literals in the first argument of a method invocation without parentheses."
+Lint/AssignmentInCondition: "Don't use assignment in conditions."
+Lint/BigDecimalNew: '`BigDecimal.new()` is deprecated. Use `BigDecimal()` instead.'
+Lint/BinaryOperatorWithIdenticalOperands: 'This cop checks for places where binary operator has identical operands.'
+Lint/BooleanSymbol: 'Check for `:true` and `:false` symbols.'
+Lint/CircularArgumentReference: "Default values in optional keyword arguments and optional ordinal arguments should not refer back to the name of the argument."
+Lint/ConstantDefinitionInBlock: 'Do not define constants within a block.'
+Lint/ConstantResolution: 'Check that constants are fully qualified with `::`.'
+Lint/DeprecatedClassMethods: 'Check for deprecated class method calls.'
+Lint/DeprecatedOpenSSLConstant: "Don't use algorithm constants for `OpenSSL::Cipher` and `OpenSSL::Digest`."
+Lint/DisjunctiveAssignmentInConstructor: 'In constructor, plain assignment is preferred over disjunctive.'
+Lint/DuplicateBranch: "Checks that there are no repeated bodies within `if/unless`, `case-when` and `rescue` constructs."
+Lint/DuplicateCaseCondition: 'Do not repeat values in case conditionals.'
+Lint/DuplicateElsifCondition: 'Do not repeat conditions used in if `elsif`.'
+Lint/DuplicateHashKey: 'Check for duplicate keys in hash literals.'
+Lint/DuplicateMethods: 'Check for duplicate method definitions.'
+Lint/DuplicateRegexpCharacterClassElement: 'Checks for duplicate elements in Regexp character classes.'
+Lint/DuplicateRequire: 'Check for duplicate `require`s and `require_relative`s.'
+Lint/DuplicateRescueException: 'Checks that there are no repeated exceptions used in `rescue` expressions.'
+Lint/EachWithObjectArgument: 'Check for immutable argument given to each_with_object.'
+Lint/ElseLayout: 'Check for odd code arrangement in an else block.'
+Lint/EmptyBlock: 'This cop checks for blocks without a body.'
+Lint/EmptyClass: 'Checks for classes and metaclasses without a body.'
+Lint/EmptyConditionalBody: 'This cop checks for the presence of `if`, `elsif` and `unless` branches without a body.'
+Lint/EmptyEnsure: 'Checks for empty ensure block.'
+Lint/EmptyExpression: 'Checks for empty expressions.'
+Lint/EmptyFile: 'Enforces that Ruby source files are not empty.'
+Lint/EmptyInterpolation: 'Checks for empty string interpolation.'
+Lint/EmptyWhen: 'Checks for `when` branches with empty bodies.'
+Lint/EnsureReturn: 'Do not use return in an ensure block.'
+Lint/ErbNewArguments: 'Use `:trim_mode` and `:eoutvar` keyword arguments to `ERB.new`.'
+Lint/FlipFlop: 'Checks for flip-flops.'
+Lint/FloatComparison: 'Checks for the presence of precise comparison of floating point numbers.'
+Lint/FloatOutOfRange: "Catches floating-point literals too large or small for Ruby to represent."
+Lint/FormatParameterMismatch: 'The number of parameters to format/sprint must match the fields.'
+Lint/HashCompareByIdentity: 'Prefer using `Hash#compare_by_identity` than using `object_id` for keys.'
+Lint/HeredocMethodCallPosition: "Checks for the ordering of a method call where the receiver of the call is a HEREDOC."
+Lint/IdentityComparison: 'Prefer `equal?` over `==` when comparing `object_id`.'
+Lint/ImplicitStringConcatenation: "Checks for adjacent string literals on the same line, which could better be represented as a single string literal."
+Lint/IneffectiveAccessModifier: "Checks for attempts to use `private` or `protected` to set the visibility of a class method, which does not work."
+Lint/InheritException: 'Avoid inheriting from the `Exception` class.'
+Lint/InterpolationCheck: 'Raise warning for interpolation in single q strs.'
+Lint/LiteralAsCondition: 'Checks of literals used in conditions.'
+Lint/LiteralInInterpolation: 'Checks for literals used in interpolation.'
+Lint/Loop: "Use Kernel#loop with break rather than begin/end/until or begin/end/while for post-loop tests."
+Lint/MissingCopEnableDirective: 'Checks for a `# rubocop:enable` after `# rubocop:disable`.'
+Lint/MissingSuper: "This cop checks for the presence of constructors and lifecycle callbacks without calls to `super`'."
+Lint/MixedRegexpCaptureTypes: 'Do not mix named captures and numbered captures in a Regexp literal.'
+Lint/MultipleComparison: "Use `&&` operator to compare multiple values."
+Lint/NestedMethodDefinition: 'Do not use nested method definitions.'
+Lint/NestedPercentLiteral: 'Checks for nested percent literals.'
+Lint/NextWithoutAccumulator:  "Do not omit the accumulator when calling `next` in a `reduce`/`inject` block."
+Lint/NoReturnInBeginEndBlocks: 'Do not `return` inside `begin..end` blocks in assignment contexts.'
+Lint/NonLocalExitFromIterator: 'Do not use return in iterator to cause non-local exit.'
+Lint/NumberConversion: 'Checks unsafe usage of number conversion methods.'
+Lint/OrderedMagicComments: 'Checks the proper ordering of magic comments and whether a magic comment is not placed before a shebang.'
+Lint/OutOfRangeRegexpRef: 'Checks for out of range reference for Regexp because it always returns nil.'
+Lint/ParenthesesAsGroupedExpression: "Checks for method calls with a space before the opening parenthesis."
+Lint/PercentStringArray: "Checks for unwanted commas and quotes in %w/%W literals."
+Lint/PercentSymbolArray: "Checks for unwanted commas and colons in %i/%I literals."
+Lint/RaiseException: "Checks for `raise` or `fail` statements which are raising `Exception` class."
+Lint/RandOne: "Checks for `rand(1)` calls. Such calls always return `0` and most likely a mistake."
+Lint/RedundantCopDisableDirective: "Checks for rubocop:disable comments that can be removed. Note: this cop is not disabled when disabling all cops. It must be explicitly disabled."
+Lint/RedundantCopEnableDirective: "Checks for rubocop:enable comments that can be removed."
+Lint/RedundantRequireStatement: 'Checks for unnecessary `require` statement.'
+Lint/RedundantSafeNavigation: 'Checks for redundant safe navigation calls.'
+Lint/RedundantSplatExpansion: 'Checks for splat unnecessarily being called on literals.'
+Lint/RedundantStringCoercion: 'Checks for Object#to_s usage in string interpolation.'
+Lint/RedundantWithIndex: 'Checks for redundant `with_index`.'
+Lint/RedundantWithObject: 'Checks for redundant `with_object`.'
+Lint/RegexpAsCondition: "Do not use regexp literal as a condition. The regexp literal matches `$_` implicitly."
+Lint/RequireParentheses: "Use parentheses in the method call to avoid confusion about precedence."
+Lint/RescueException: 'Avoid rescuing the Exception class.'
+Lint/RescueType: 'Avoid rescuing from non constants that could result in a `TypeError`.'
+Lint/ReturnInVoidContext: 'Checks for return in void context.'
+Lint/SafeNavigationChain: 'Do not chain ordinary method call after safe navigation operator.'
+Lint/SafeNavigationConsistency: "Check to make sure that if safe navigation is used for a method call in an `&&` or `||` condition that safe navigation is used for all method calls on that same object."
+Lint/SafeNavigationWithEmpty: 'Avoid `foo&.empty?` in conditionals.'
+Lint/ScriptPermission: 'Grant script file execute permission.'
+Lint/SelfAssignment: 'Checks for self-assignments.'
+Lint/SendWithMixinArgument: 'Checks for `send` method when using mixin.'
+Lint/ShadowedArgument: 'Avoid reassigning arguments before they were used.'
+Lint/ShadowedException: "Avoid rescuing a higher level exception before a lower level exception."
+Lint/ShadowingOuterLocalVariable: "Do not use the same name as outer local variable for block arguments or block local variables."
+Lint/StructNewOverride: 'Disallow overriding the `Struct` built-in methods via `Struct.new`.'
+Lint/SuppressedException: "Don't suppress exceptions."
+Lint/Syntax: 'Checks syntax error.'
+Lint/ToEnumArguments: 'This cop ensures that `to_enum`/`enum_for`, called for the current method, has correct arguments.'
+Lint/ToJSON: 'Ensure #to_json includes an optional argument.'
+Lint/TopLevelReturnWithArgument: 'This cop detects top level return statements with argument.'
+Lint/TrailingCommaInAttributeDeclaration: 'This cop checks for trailing commas in attribute declarations.'
+Lint/UnderscorePrefixedVariableName: 'Do not use prefix `_` for a variable that is used.'
+Lint/UnexpectedBlockArity: 'Looks for blocks that have fewer arguments that the calling method expects.'
+Lint/UnifiedInteger: 'Use Integer instead of Fixnum or Bignum.'
+Lint/UnmodifiedReduceAccumulator: "Checks for `reduce` or `inject` blocks that do not update the accumulator each iteration."
+Lint/UnreachableCode: 'Unreachable code.'
+Lint/UnreachableLoop: 'This cop checks for loops that will have at most one iteration.'
+Lint/UnusedBlockArgument: 'Checks for unused block arguments.'
+Lint/UnusedMethodArgument: 'Checks for unused method arguments.'
+Lint/UriEscapeUnescape: "`URI.escape` method is obsolete and should not be used. Instead, use `CGI.escape`, `URI.encode_www_form` or `URI.encode_www_form_component` depending on your specific use case. Also `URI.unescape` method is obsolete and should not be used. Instead, use `CGI.unescape`, `URI.decode_www_form` or `URI.decode_www_form_component` depending on your specific use case."
+Lint/UriRegexp: 'Use `URI::DEFAULT_PARSER.make_regexp` instead of `URI.regexp`.'
+Lint/UselessAccessModifier: 'Checks for useless access modifiers.'
+Lint/UselessAssignment: 'Checks for useless assignment to a local variable.'
+Lint/UselessElseWithoutRescue: 'Checks for useless `else` in `begin..end` without `rescue`.'
+Lint/UselessMethodDefinition: 'Checks for useless method definitions.'
+Lint/UselessSetterCall: 'Checks for useless setter call to a local variable.'
+Lint/UselessTimes: 'Checks for useless `Integer#times` calls.'
+Lint/Void: 'Possible use of operator/literal/variable in void context.'
+Metrics/AbcSize: "A calculated magnitude based on number of assignments, branches, and conditions."
+Metrics/BlockLength: 'Avoid long blocks with many lines.'
+Metrics/BlockNesting: 'Avoid excessive block nesting.'
+Metrics/ClassLength: 'Avoid classes longer than 100 lines of code.'
+Metrics/CyclomaticComplexity: "A complexity metric that is strongly correlated to the number of test cases needed to validate a method."
+Metrics/MethodLength: 'Avoid methods longer than 10 lines of code.'
+Metrics/ModuleLength: 'Avoid modules longer than 100 lines of code.'
+Metrics/ParameterLists: 'Avoid parameter lists longer than three or four parameters.'
+Metrics/PerceivedComplexity: "A complexity metric geared towards measuring complexity for a human reader."
+Migration/DepartmentName: "Check that cop names in rubocop:disable (etc) comments are given with department name."
+Naming/AccessorMethodName: "Check the naming of accessor methods for get_/set_."
+Naming/AsciiIdentifiers: 'Use only ascii symbols in identifiers and constants.'
+Naming/BinaryOperatorParameterName: 'When defining binary operators, name the argument other.'
+Naming/BlockParameterName: "Checks for block parameter names that contain capital letters, end in numbers, or do not meet a minimal length."
+Naming/ClassAndModuleCamelCase: 'Use CamelCase for classes and modules.'
+Naming/ConstantName: 'Constants should use SCREAMING_SNAKE_CASE.'
+Naming/FileName: 'Use snake_case for source file names.'
+Naming/HeredocDelimiterCase: 'Use configured case for heredoc delimiters.'
+Naming/HeredocDelimiterNaming: 'Use descriptive heredoc delimiters.'
+Naming/MemoizedInstanceVariableName: "Memoized method name should match memo instance variable name."
+Naming/MethodName: 'Use the configured style when naming methods.'
+Naming/MethodParameterName: "Checks for method parameter names that contain capital letters, end in numbers, or do not meet a minimal length."
+Naming/PredicateName: 'Check the names of predicate methods.'
+Naming/RescuedExceptionsVariableName: 'Use consistent rescued exceptions variables naming.'
+Naming/VariableName: 'Use the configured style when naming variables.'
+Naming/VariableNumber: 'Use the configured style when numbering symbols, methods and variables.'
+Security/Eval: 'The use of eval represents a serious security risk.'
+Security/JSONLoad: "Prefer usage of `JSON.parse` over `JSON.load` due to potential security issues. See reference for more information."
+Security/MarshalLoad: "Avoid using of `Marshal.load` or `Marshal.restore` due to potential security issues. See reference for more information."
+Security/Open: 'The use of `Kernel#open` and `URI.open` represent a serious security risk.'
+Security/YAMLLoad: "Prefer usage of `YAML.safe_load` over `YAML.load` due to potential security issues. See reference for more information."
+Style/AccessModifierDeclarations: 'Checks style of how access modifiers are used.'
+Style/AccessorGrouping: 'Checks for grouping of accessors in `class` and `module` bodies.'
+Style/Alias: 'Use alias instead of alias_method.'
+Style/AndOr: 'Use &&/|| instead of and/or.'
+Style/ArgumentsForwarding: 'Use arguments forwarding.'
+Style/ArrayCoercion: "Use Array() instead of explicit Array check or [*var], when dealing with a variable you want to treat as an Array, but you're not certain it's an array."
+Style/ArrayJoin: 'Use Array#join instead of Array#*.'
+Style/AsciiComments: 'Use only ascii symbols in comments.'
+Style/Attr: 'Checks for uses of Module#attr.'
+Style/AutoResourceCleanup: 'Suggests the usage of an auto resource cleanup version of a method (if available).'
+Style/BarePercentLiterals: 'Checks if usage of %() or %Q() matches configuration.'
+Style/BeginBlock: 'Avoid the use of BEGIN blocks.'
+Style/BisectedAttrAccessor: "Checks for places where `attr_reader` and `attr_writer` for the same method can be combined into single `attr_accessor`."
+Style/BlockComments: 'Do not use block comments.'
+Style/BlockDelimiters: "Avoid using {...} for multi-line blocks (multiline chaining is always ugly). Prefer {...} over do...end for single-line blocks."
+Style/CaseEquality: 'Avoid explicit use of the case equality operator(===).'
+Style/CaseLikeIf: 'This cop identifies places where `if-elsif` constructions can be replaced with `case-when`.'
+Style/CharacterLiteral: 'Checks for uses of character literals.'
+Style/ClassAndModuleChildren: 'Checks style of children classes and modules.'
+Style/ClassCheck: 'Enforces consistent use of `Object#is_a?` or `Object#kind_of?`.'
+Style/ClassEqualityComparison: 'Enforces the use of `Object#instance_of?` instead of class comparison for equality.'
+Style/ClassMethods: 'Use self when defining module/class methods.'
+Style/ClassMethodsDefinitions: 'Enforces using `def self.method_name` or `class << self` to define class methods.'
+Style/ClassVars: 'Avoid the use of class variables.'
+Style/CollectionCompact: 'Use `{Array,Hash}#{compact,compact!}` instead of custom logic to reject nils.'
+Style/CollectionMethods: 'Preferred collection methods.'
+Style/ColonMethodCall: 'Do not use :: for method call.'
+Style/ColonMethodDefinition: 'Do not use :: for defining class methods.'
+Style/CombinableLoops: "Checks for places where multiple consecutive loops over the same data can be combined into a single loop."
+Style/CommandLiteral: 'Use `` or %x around command literals.'
+Style/CommentedKeyword: 'Do not place comments on the same line as certain keywords.'
+Style/ConditionalAssignment: "Use the return value of `if` and `case` statements for assignment to a variable and variable comparison instead of assigning that variable inside of each branch."
+Style/ConstantVisibility: "Check that class- and module constants have visibility declarations."
+Style/Copyright: 'Include a copyright notice in each file before any code.'
+Style/DateTime: 'Use Time over DateTime.'
+Style/DefWithParentheses: 'Use def with parentheses when there are arguments.'
+Style/Dir: "Use the `__dir__` method to retrieve the canonicalized absolute path to the current file."
+Style/DisableCopsWithinSourceCodeDirective: "Forbids disabling/enabling cops within source code."
+Style/DocumentDynamicEvalDefinition: "When using `class_eval` (or other `eval`) with string interpolation, add a comment block showing its appearance if interpolated."
+Style/Documentation: 'Document classes and non-namespace modules.'
+Style/DocumentationMethod: 'Checks for missing documentation comment for public methods.'
+Style/DoubleCopDisableDirective: 'Checks for double rubocop:disable comments on a single line.'
+Style/DoubleNegation: 'Checks for uses of double negation (!!).'
+Style/EachForSimpleLoop: "Use `Integer#times` for a simple loop which iterates a fixed number of times."
+Style/EachWithObject: 'Prefer `each_with_object` over `inject` or `reduce`.'
+Style/EmptyBlockParameter: 'Omit pipes for empty block parameters.'
+Style/EmptyCaseCondition: 'Avoid empty condition in case statements.'
+Style/EmptyElse: 'Avoid empty else-clauses.'
+Style/EmptyLambdaParameter: 'Omit parens for empty lambda parameters.'
+Style/EmptyLiteral: 'Prefer literals to Array.new/Hash.new/String.new.'
+Style/EmptyMethod: 'Checks the formatting of empty method definitions.'
+Style/Encoding: 'Use UTF-8 as the source file encoding.'
+Style/EndBlock: 'Avoid the use of END blocks.'
+Style/EvalWithLocation: 'Pass `__FILE__` and `__LINE__` to `eval` method, as they are used by backtraces.'
+Style/EvenOdd: 'Favor the use of `Integer#even?` && `Integer#odd?`.'
+Style/ExpandPathArguments: "Use `expand_path(__dir__)` instead of `expand_path('..', __FILE__)`."
+Style/ExplicitBlockArgument: "Consider using explicit block argument to avoid writing block literal that just passes its arguments to another block."
+Style/ExponentialNotation: 'When using exponential notation, favor a mantissa between 1 (inclusive) and 10 (exclusive).'
+Style/FloatDivision: 'For performing float division, coerce one side only.'
+Style/For: 'Checks use of for or each in multiline loops.'
+Style/FormatString: 'Enforce the use of Kernel#sprintf, Kernel#format or String#%.'
+Style/FormatStringToken: 'Use a consistent style for format string tokens.'
+Style/FrozenStringLiteralComment: "Add the frozen_string_literal comment to the top of files to help transition to frozen string literals by default."
+Style/GlobalStdStream: 'Enforces the use of `$stdout/$stderr/$stdin` instead of `STDOUT/STDERR/STDIN`.'
+Style/GlobalVars: 'Do not introduce global variables.'
+Style/GuardClause: 'Check for conditionals that can be replaced with guard clauses.'
+Style/HashAsLastArrayItem: "Checks for presence or absence of braces around hash literal as a last array item depending on configuration."
+Style/HashEachMethods: 'Use Hash#each_key and Hash#each_value.'
+Style/HashLikeCase: "Checks for places where `case-when` represents a simple 1:1 mapping and can be replaced with a hash lookup."
+Style/HashSyntax: "Prefer Ruby 1.9 hash syntax { a: 1, b: 2 } over 1.8 syntax { :a => 1, :b => 2 }."
+Style/HashTransformKeys: 'Prefer `transform_keys` over `each_with_object`, `map`, or `to_h`.'
+Style/HashTransformValues: 'Prefer `transform_values` over `each_with_object`, `map`, or `to_h`.'
+Style/IdenticalConditionalBranches: "Checks that conditional statements do not have an identical line at the end of each branch, which can validly be moved out of the conditional."
+Style/IfInsideElse: 'Finds if nodes inside else, which can be converted to elsif.'
+Style/IfUnlessModifierOfIfUnless: "Avoid modifier if/unless usage on conditionals."
+Style/IfWithSemicolon: 'Do not use if x; .... Use the ternary operator instead.'
+Style/ImplicitRuntimeError: "Use `raise` or `fail` with an explicit exception class and message, rather than just a message."
+Style/InfiniteLoop: "Use Kernel#loop for infinite loops. This cop is unsafe in the body may raise a `StopIteration` exception."
+Style/InlineComment: 'Avoid trailing inline comments.'
+Style/InverseMethods: "Use the inverse method instead of `!.method` if an inverse method is defined."
+Style/IpAddresses: "Don't include literal IP addresses in code."
+Style/KeywordParametersOrder: 'Enforces that optional keyword parameters are placed at the end of the parameters list.'
+Style/Lambda: 'Use the new lambda literal syntax for single-line blocks.'
+Style/LambdaCall: 'Use lambda.call(...) instead of lambda.(...).'
+Style/LineEndConcatenation: "Use \ instead of + or << to concatenate two string literals at line end."
+Style/MethodCallWithArgsParentheses: 'Use parentheses for method calls with arguments.'
+Style/MethodCallWithoutArgsParentheses: 'Do not use parentheses for method calls with no arguments.'
+Style/MethodCalledOnDoEndBlock: 'Avoid chaining a method call on a do...end block.'
+Style/MinMax: "Use `Enumerable#minmax` instead of `Enumerable#min` and `Enumerable#max` in conjunction."
+Style/MissingElse: "Require if/case expressions to have an else branches. If enabled, it is recommended that Style/UnlessElse and Style/EmptyElse be enabled. This will conflict with Style/EmptyElse if Style/EmptyElse is configured to style 'both'."
+Style/MissingRespondToMissing: "Checks if `method_missing` is implemented without implementing `respond_to_missing`."
+Style/MixinGrouping: 'Checks for grouping of mixins in `class` and `module` bodies.'
+Style/MixinUsage: 'Checks that `include`, `extend` and `prepend` exists at the top level.'
+Style/ModuleFunction: 'Checks for usage of `extend self` in modules.'
+Style/MultilineBlockChain: 'Avoid multi-line chains of blocks.'
+Style/MultilineIfModifier: 'Only use if/unless modifiers on single line statements.'
+Style/MultilineIfThen: 'Do not use then for multi-line if/unless.'
+Style/MultilineMemoization: 'Wrap multiline memoizations in a `begin` and `end` block.'
+Style/MultilineMethodSignature: 'Avoid multi-line method signatures.'
+Style/MultilineTernaryOperator: "Avoid multi-line ?: (the ternary operator); use if/unless instead."
+Style/MultilineWhenThen: 'Do not use then for multi-line when statement.'
+Style/MultipleComparison: "Avoid comparing a variable with multiple items in a conditional, use Array#include? instead."
+Style/MutableConstant: 'Do not assign mutable objects to constants.'
+Style/NegatedIf: "Favor unless over if for negative conditions (or control flow or)."
+Style/NegatedIfElseCondition: "This cop checks for uses of `if-else` and ternary operators with a negated condition which can be simplified by inverting condition and swapping branches."
+Style/NegatedUnless: 'Favor if over unless for negative conditions.'
+Style/NegatedWhile: 'Favor until over while for negative conditions.'
+Style/NestedModifier: 'Avoid using nested modifiers.'
+Style/NestedParenthesizedCalls: "Parenthesize method calls which are nested inside the argument list of another parenthesized method call."
+Style/NestedTernaryOperator: 'Use one expression per branch in a ternary operator.'
+Style/Next: 'Use `next` to skip iteration instead of a condition at the end.'
+Style/NilComparison: 'Prefer x.nil? to x == nil.'
+Style/NilLambda: 'Prefer `-> {}` to `-> { nil }`.'
+Style/NonNilCheck: 'Checks for redundant nil checks.'
+Style/Not: 'Use ! instead of not.'
+Style/NumericLiteralPrefix: 'Use smallcase prefixes for numeric literals.'
+Style/NumericPredicate: "Checks for the use of predicate- or comparison methods for numeric comparisons."
+Style/OneLineConditional: "Favor the ternary operator (?:) or multi-line constructs over single-line if/then/else/end constructs."
+Style/OptionHash: "Don't use option hashes when you can use keyword arguments."
+Style/OptionalArguments: "Checks for optional arguments that do not appear at the end of the argument list."
+Style/OptionalBooleanParameter: 'Use keyword arguments when defining method with boolean argument.'
+Style/OrAssignment: 'Recommend usage of double pipe equals (||=) where applicable.'
+Style/ParallelAssignment: "Check for simple usages of parallel assignment. It will only warn when the number of variables matches on both sides of the assignment."
+Style/ParenthesesAroundCondition: "Don't use parentheses around the condition of an if/unless/while."
+Style/PercentLiteralDelimiters: 'Use `%`-literal delimiters consistently.'
+Style/PercentQLiterals: 'Checks if uses of %Q/%q match the configured preference.'
+Style/PerlBackrefs: 'Avoid Perl-style regex back references.'
+Style/PreferredHashMethods: 'Checks use of `has_key?` and `has_value?` Hash methods.'
+Style/Proc: 'Use proc instead of Proc.new.'
+Style/RaiseArgs: 'Checks the arguments passed to raise/fail.'
+Style/RandomWithOffset: "Prefer to use ranges when generating random numbers instead of integers with offsets."
+Style/RedundantArgument: 'Check for a redundant argument passed to certain methods.'
+Style/RedundantAssignment: 'Checks for redundant assignment before returning.'
+Style/RedundantBegin: "Don't use begin blocks when they are not needed."
+Style/RedundantCapitalW: 'Checks for %W when interpolation is not needed.'
+Style/RedundantCondition: 'Checks for unnecessary conditional expressions.'
+Style/RedundantException: "Checks for an obsolete RuntimeException argument in raise/fail."
+Style/RedundantFetchBlock: "Use `fetch(key, value)` instead of `fetch(key) { value }` when value has Numeric, Rational, Complex, Symbol or String type, `false`, `true`, `nil` or is a constant."
+Style/RedundantFileExtensionInRequire: "Checks for the presence of superfluous `.rb` extension in the filename provided to `require` and `require_relative`."
+Style/RedundantFreeze: "Checks usages of Object#freeze on immutable objects."
+Style/RedundantInterpolation: 'Checks for strings that are just an interpolated expression.'
+Style/RedundantParentheses: "Checks for parentheses that seem not to serve any purpose."
+Style/RedundantPercentQ: 'Checks for %q/%Q when single quotes or double quotes would do.'
+Style/RedundantRegexpCharacterClass: 'Checks for unnecessary single-element Regexp character classes.'
+Style/RedundantRegexpEscape: 'Checks for redundant escapes in Regexps.'
+Style/RedundantReturn: "Don't use return where it's not required."
+Style/RedundantSelf: "Don't use self where it's not needed."
+Style/RedundantSelfAssignment: 'Checks for places where redundant assignments are made for in place modification methods.'
+Style/RedundantSortBy: 'Use `sort` instead of `sort_by { |x| x }`.'
+Style/RegexpLiteral: 'Use / or %r around regular expressions.'
+Style/RescueModifier: 'Avoid using rescue in its modifier form.'
+Style/RescueStandardError: 'Avoid rescuing without specifying an error class.'
+Style/ReturnNil: 'Use return instead of return nil.'
+Style/SafeNavigation: "This cop transforms usages of a method call safeguarded by a check for the existence of the object to safe navigation (`&.`). Auto-correction is unsafe as it assumes the object will be `nil` or truthy, but never `false`."
+Style/Sample: "Use `sample` instead of `shuffle.first`, `shuffle.last`, and `shuffle[Integer]`."
+Style/SelfAssignment: "Checks for places where self-assignment shorthand should have been used."
+Style/Semicolon: "Don't use semicolons to terminate expressions."
+Style/Send: 'Prefer `Object#__send__` or `Object#public_send` to `send`, as `send` may overlap with existing methods.'
+Style/SingleArgumentDig: 'Avoid using single argument dig method.'
+Style/SingleLineBlockParams: 'Enforces the names of some block params.'
+Style/SingleLineMethods: 'Avoid single-line methods.'
+Style/SlicingWithRange: 'Checks array slicing is done with endless ranges when suitable.'
+Style/SoleNestedConditional: "Finds sole nested conditional nodes which can be merged into outer conditional node."
+Style/SpecialGlobalVars: 'Avoid Perl-style global variables.'
+Style/StabbyLambdaParentheses: 'Check for the usage of parentheses around stabby lambda arguments.'
+Style/StaticClass: 'Prefer modules to classes with only class methods.'
+Style/StderrPuts: 'Use `warn` instead of `$stderr.puts`.'
+Style/StringConcatenation: 'Checks for places where string concatenation can be replaced with string interpolation.'
+Style/StringHashKeys: 'Prefer symbols instead of strings as hash keys.'
+Style/StringLiteralsInInterpolation: "Checks if uses of quotes inside expressions in interpolated strings match the configured preference."
+Style/StringMethods: 'Checks if configured preferred methods are used over non-preferred.'
+Style/Strip: 'Use `strip` instead of `lstrip.rstrip`.'
+Style/StructInheritance: 'Checks for inheritance from Struct.new.'
+Style/SwapValues: 'This cop enforces the use of shorthand-style swapping of 2 variables.'
+Style/SymbolArray: 'Use %i or %I for arrays of symbols.'
+Style/SymbolLiteral: 'Use plain symbols instead of string symbols when possible.'
+Style/SymbolProc: 'Use symbols as procs instead of blocks when possible.'
+Style/TernaryParentheses: 'Checks for use of parentheses around ternary conditions.'
+Style/TrailingBodyOnClass: 'Class body goes below class statement.'
+Style/TrailingBodyOnMethodDefinition: 'Method body goes below definition.'
+Style/TrailingBodyOnModule: 'Module body goes below module statement.'
+Style/TrailingCommaInArguments: 'Checks for trailing comma in argument lists.'
+Style/TrailingCommaInArrayLiteral: 'Checks for trailing comma in array literals.'
+Style/TrailingCommaInBlockArgs: 'Checks for useless trailing commas in block arguments.'
+Style/TrailingCommaInHashLiteral: 'Checks for trailing comma in hash literals.'
+Style/TrailingMethodEndStatement: 'Checks for trailing end statement on line of method body.'
+Style/TrailingUnderscoreVariable: "Checks for the usage of unneeded trailing underscores at the end of parallel variable assignment."
+Style/TrivialAccessors: 'Prefer attr_* methods to trivial readers/writers.'
+Style/UnlessElse: "Do not use unless with else. Rewrite these with the positive case first."
+Style/UnpackFirst: "Checks for accessing the first element of `String#unpack` instead of using `unpack1`."
+Style/VariableInterpolation: "Don't interpolate global, instance and class variables directly in strings."
+Style/WhenThen: 'Use when x then ... for one-line cases.'
+Style/WhileUntilDo: 'Checks for redundant do after while or until.'
+Style/WhileUntilModifier: "Favor modifier while/until usage when you have a single-line body."
+Style/YodaCondition: 'Forbid or enforce yoda conditions.'
+Style/ZeroLengthPredicate: 'Use #empty? when testing for objects of length 0.'
+Rails/ActionFilter: 'Enforces consistent use of action filter methods.'
+Rails/ActiveRecordAliases: "Avoid Active Record aliases: Use `update` instead of `update_attributes`. Use `update!` instead of `update_attributes!`."
+Rails/ActiveRecordCallbacksOrder: 'Order callback declarations in the order in which they will be executed.'
+Rails/ActiveRecordOverride: "Check for overriding Active Record methods instead of using callbacks."
+Rails/ActiveSupportAliases: "Avoid ActiveSupport aliases of standard ruby methods: `String#starts_with?`, `String#ends_with?`, `Array#append`, `Array#prepend`."
+Rails/AfterCommitOverride: "This cop enforces that there is only one call to `after_commit` (and its aliases - `after_create_commit`, `after_update_commit`, and `after_destroy_commit`) with the same callback name per model."
+Rails/ApplicationController: 'Check that controllers subclass ApplicationController.'
+Rails/ApplicationJob: 'Check that jobs subclass ApplicationJob.'
+Rails/ApplicationMailer: 'Check that mailers subclass ApplicationMailer.'
+Rails/ApplicationRecord: 'Check that models subclass ApplicationRecord.'
+Rails/ArelStar: 'Enforces `Arel.star` instead of `"*"` for expanded columns.'
+Rails/AssertNot: 'Use `assert_not` instead of `assert !`.'
+Rails/AttributeDefaultBlockValue: 'Pass method call in block for attribute option `default`.'
+Rails/BelongsTo: "Use `optional: true` instead of `required: false` for `belongs_to` relations."
+Rails/Blank: 'Enforces use of `blank?`.'
+Rails/BulkChangeTable: 'Check whether alter queries are combinable.'
+Rails/ContentTag: 'Use `tag` instead of `content_tag`.'
+Rails/CreateTableWithTimestamps: "Checks the migration for which timestamps are not included when creating a new table."
+Rails/Date: "Checks the correct usage of date aware methods, such as Date.today, Date.current etc."
+Rails/DefaultScope: 'Avoid use of `default_scope`.'
+Rails/Delegate: 'Prefer delegate method for delegations.'
+Rails/DelegateAllowBlank: 'Do not use allow_blank as an option to delegate.'
+Rails/DynamicFindBy: 'Use `find_by` instead of dynamic `find_by_*`.'
+Rails/EnumHash: 'Prefer hash syntax over array syntax when defining enums.'
+Rails/EnumUniqueness: 'Avoid duplicate integers in hash-syntax `enum` declaration.'
+Rails/EnvironmentComparison: "Favor `Rails.env.production?` over `Rails.env == 'production'`."
+Rails/Exit: "Favor `fail`, `break`, `return`, etc. over `exit` in application or library code outside of Rake files to avoid exits during unit testing or running in production."
+Rails/FilePath: 'Use `Rails.root.join` for file path joining.'
+Rails/FindBy: 'Prefer find_by over where.first.'
+Rails/FindById: "Favor the use of `find` over `where.take!`, `find_by!`, and `find_by_id!` when you need to retrieve a single record by primary key when you expect it to be found."
+Rails/FindEach: 'Prefer all.find_each over all.find.'
+Rails/HasAndBelongsToMany: 'Prefer has_many :through to has_and_belongs_to_many.'
+Rails/HasManyOrHasOneDependent: 'Define the dependent option to the has_many and has_one associations.'
+Rails/HelperInstanceVariable: 'Do not use instance variables in helpers.'
+Rails/HttpPositionalArguments: 'Use keyword arguments instead of positional arguments in http method calls.'
+Rails/HttpStatus: 'Enforces use of symbolic or numeric value to define HTTP status.'
+Rails/IgnoredSkipActionFilterOption: 'Checks that `if` and `only` (or `except`) are not used together as options of `skip_*` action filter.'
+Rails/IndexBy: 'Prefer `index_by` over `each_with_object`, `to_h`, or `map`.'
+Rails/IndexWith: 'Prefer `index_with` over `each_with_object`, `to_h`, or `map`.'
+Rails/Inquiry: "Prefer Ruby's comparison operators over Active Support's `Array#inquiry` and `String#inquiry`."
+Rails/InverseOf: 'Checks for associations where the inverse cannot be determined automatically.'
+Rails/LexicallyScopedActionFilter: "Checks that methods specified in the filter's `only` or `except` options are explicitly defined in the controller."
+Rails/LinkToBlank: 'Checks that `link_to` with a `target: "_blank"` have a `rel: "noopener"` option passed to them.'
+Rails/MailerName: 'Mailer should end with `Mailer` suffix.'
+Rails/MatchRoute: "Don't use `match` to define any routes unless there is a need to map multiple request types among [:get, :post, :patch, :put, :delete] to a single action using the `:via` option."
+Rails/NegateInclude: 'Prefer `collection.exclude?(obj)` over `!collection.include?(obj)`.'
+Rails/NotNullColumn: 'Do not add a NOT NULL column without a default value.'
+Rails/OrderById: "Do not use the `id` column for ordering. Use a timestamp column to order chronologically."
+Rails/Output: 'Checks for calls to puts, print, etc.'
+Rails/OutputSafety: 'The use of `html_safe` or `raw` may be a security risk.'
+Rails/Pick: 'Prefer `pick` over `pluck(...).first`.'
+Rails/Pluck: 'Prefer `pluck` over `map { ... }`.'
+Rails/PluckId: 'Use `ids` instead of `pluck(:id)` or `pluck(primary_key)`.'
+Rails/PluckInWhere: 'Use `select` instead of `pluck` in `where` query methods.'
+Rails/PluralizationGrammar: 'Checks for incorrect grammar when using methods like `3.day.ago`.'
+Rails/Presence: 'Checks code that can be written more easily using `Object#presence` defined by Active Support.'
+Rails/Present: 'Enforces use of `present?`.'
+Rails/RakeEnvironment: 'Include `:environment` as a dependency for all Rake tasks.'
+Rails/ReadWriteAttribute: "Checks for read_attribute(:attr) and write_attribute(:attr, val)."
+Rails/RedundantAllowNil: "Finds redundant use of `allow_nil` when `allow_blank` is set to certain values in model validations."
+Rails/RedundantForeignKey: 'Checks for associations where the `:foreign_key` option is redundant.'
+Rails/RedundantReceiverInWithOptions: 'Checks for redundant receiver in `with_options`.'
+Rails/ReflectionClassName: 'Use a string for `class_name` option value in the definition of a reflection.'
+Rails/RefuteMethods: 'Use `assert_not` methods instead of `refute` methods.'
+Rails/RelativeDateConstant: 'Do not assign relative date to constants.'
+Rails/RenderInline: 'Prefer using a template over inline rendering.'
+Rails/RenderPlainText: 'Prefer `render plain:` over `render text:`.'
+Rails/RequestReferer: 'Use consistent syntax for request.referer.'
+Rails/ReversibleMigration: 'Checks whether the change method of the migration file is reversible.'
+Rails/SafeNavigation: "Use Ruby's safe navigation operator (`&.`) instead of `try!`."
+Rails/SafeNavigationWithBlank: 'Avoid `foo&.blank?` in conditionals.'
+Rails/SaveBang: 'Identifies possible cases where Active Record save! or related should be used.'
+Rails/ScopeArgs: 'Checks the arguments of ActiveRecord scopes.'
+Rails/ShortI18n: 'Use the short form of the I18n methods: `t` instead of `translate` and `l` instead of `localize`.'
+Rails/SkipsModelValidations: "Use methods that skips model validations with caution. See reference for more information."
+Rails/SquishedSQLHeredocs: 'Checks SQL heredocs to use `.squish`.'
+Rails/TimeZone: 'Checks the correct usage of time zone aware methods.'
+Rails/UniqBeforePluck: 'Prefer the use of uniq or distinct before pluck.'
+Rails/UniqueValidationWithoutIndex: 'Uniqueness validation should be with a unique index.'
+Rails/UnknownEnv: 'Use correct environment name.'
+Rails/Validation: 'Use validates :attribute, hash of validations.'
+Rails/WhereEquals: 'Pass conditions to `where` as a hash instead of manually constructing SQL.'
+Rails/WhereExists: 'Prefer `exists?(...)` over `where(...).exists?`.'
+Rails/WhereNot: 'Use `where.not(...)` instead of manually constructing negated SQL in `where`.'
+Style/AndOr: 'Use &&/|| instead of and/or.'
+RSpec/AlignLeftLetBrace: "Checks that left braces for adjacent single line lets are aligned."
+RSpec/AlignRightLetBrace: "Checks that right braces for adjacent single line lets are aligned."
+RSpec/AnyInstance: "Check that instances are not being stubbed globally."
+RSpec/AroundBlock: "Checks that around blocks actually run the test."
+RSpec/Be: "Check for expectations where `be` is used without argument."
+RSpec/BeEql: "Check for expectations where `be(...)` can replace `eql(...)`."
+RSpec/BeforeAfterAll: "Check that before/after(:all) isn't being used."
+RSpec/ContextMethod: "`context` should not be used for specifying methods."
+RSpec/ContextWording: "Checks that `context` docstring starts with an allowed prefix."
+RSpec/DescribeClass: "Check that the first argument to the top-level describe is a constant."
+RSpec/DescribeMethod: "Checks that the second argument to `describe` specifies a method."
+RSpec/DescribeSymbol: "Avoid describing symbols."
+RSpec/DescribedClass: "Checks that tests use `described_class`."
+RSpec/DescribedClassModuleWrapping: "Avoid opening modules and defining specs within them."
+RSpec/Dialect: "This cop enforces custom RSpec dialects."
+RSpec/EmptyExampleGroup: "Checks if an example group does not include any tests."
+RSpec/EmptyHook: "Checks for empty before and after hooks."
+RSpec/EmptyLineAfterExample: "Checks if there is an empty line after example blocks."
+RSpec/EmptyLineAfterExampleGroup: "Checks if there is an empty line after example group blocks."
+RSpec/EmptyLineAfterFinalLet: "Checks if there is an empty line after the last let block."
+RSpec/EmptyLineAfterHook: "Checks if there is an empty line after hook blocks."
+RSpec/EmptyLineAfterSubject: "Checks if there is an empty line after subject block."
+RSpec/ExampleLength: "Checks for long examples."
+RSpec/ExampleWithoutDescription: "Checks for examples without a description."
+RSpec/ExampleWording: "Checks for common mistakes in example descriptions."
+RSpec/ExpectActual: "Checks for `expect(...)` calls containing literal values."
+RSpec/ExpectChange: "Checks for consistent style of change matcher."
+RSpec/ExpectInHook: "Do not use `expect` in hooks such as `before`."
+RSpec/ExpectOutput: "Checks for opportunities to use `expect { ... }.to output`."
+RSpec/FilePath: "Checks that spec file paths are consistent and well-formed."
+RSpec/Focus: "Checks if examples are focused."
+RSpec/HookArgument: "Checks the arguments passed to `before`, `around`, and `after`."
+RSpec/HooksBeforeExamples: "Checks for before/around/after hooks that come after an example."
+RSpec/ImplicitBlockExpectation: "Check that implicit block expectation syntax is not used."
+RSpec/ImplicitExpect: "Check that a consistent implicit expectation style is used."
+RSpec/ImplicitSubject: "Checks for usage of implicit subject (`is_expected` / `should`)."
+RSpec/InstanceSpy: "Checks for `instance_double` used with `have_received`."
+RSpec/InstanceVariable: "Checks for instance variable usage in specs."
+RSpec/ItBehavesLike: "Checks that only one `it_behaves_like` style is used."
+RSpec/IteratedExpectation: "Check that `all` matcher is used instead of iterating over an array."
+RSpec/LeadingSubject: "Enforce that subject is the first definition in the test."
+RSpec/LeakyConstantDeclaration: "Checks that no class, module, or constant is declared."
+RSpec/LetBeforeExamples: "Checks for `let` definitions that come after an example."
+RSpec/LetSetup: "Checks unreferenced `let!` calls being used for test setup."
+RSpec/MessageChain: "Check that chains of messages are not being stubbed."
+RSpec/MessageExpectation: "Checks for consistent message expectation style."
+RSpec/MessageSpies: "Checks that message expectations are set using spies."
+RSpec/MissingExampleGroupArgument: "Checks that the first argument to an example group is not empty."
+RSpec/MultipleDescribes: "Checks for multiple top-level example groups."
+RSpec/MultipleExpectations: "Checks if examples contain too many `expect` calls."
+RSpec/MultipleMemoizedHelpers: "Checks if example groups contain too many `let` and `subject` calls."
+RSpec/MultipleSubjects: "Checks if an example group defines `subject` multiple times."
+RSpec/NamedSubject: "Checks for explicitly referenced test subjects."
+RSpec/NestedGroups: "Checks for nested example groups."
+RSpec/NotToNot: "Checks for consistent method usage for negating expectations."
+RSpec/OverwritingSetup: "Checks if there is a let/subject that overwrites an existing one."
+RSpec/Pending: "Checks for any pending or skipped examples."
+RSpec/PredicateMatcher: "Prefer using predicate matcher over using predicate method directly."
+RSpec/ReceiveCounts: "Check for `once` and `twice` receive counts matchers usage."
+RSpec/ReceiveNever: "Prefer `not_to receive(...)` over `receive(...).never`."
+RSpec/RepeatedDescription: "Check for repeated description strings in example groups."
+RSpec/RepeatedExample: "Check for repeated examples within example groups."
+RSpec/RepeatedExampleGroupBody: "Check for repeated describe and context block body."
+RSpec/RepeatedExampleGroupDescription: "Check for repeated example group descriptions."
+RSpec/RepeatedIncludeExample: "Check for repeated include of shared examples."
+RSpec/ReturnFromStub: "Checks for consistent style of stub's return setting."
+RSpec/ScatteredLet: "Checks for let scattered across the example group."
+RSpec/ScatteredSetup: "Checks for setup scattered across multiple hooks in an example group."
+RSpec/SharedContext: "Checks for proper shared_context and shared_examples usage."
+RSpec/SharedExamples: "Enforces use of string to titleize shared examples."
+RSpec/SingleArgumentMessageChain: "Checks that chains of messages contain more than one element."
+RSpec/StubbedMock: "Checks that message expectations do not have a configured response."
+RSpec/SubjectStub: "Checks for stubbed test subjects."
+RSpec/UnspecifiedException: "Checks for a specified error in checking raised errors."
+RSpec/VariableDefinition: "Checks that memoized helpers names are symbols or strings."
+RSpec/VariableName: "Checks that memoized helper names use the configured style."
+RSpec/VerifiedDoubles: "Prefer using verifying doubles over normal doubles."
+RSpec/VoidExpect: "This cop checks void `expect()`."
+RSpec/Yield: "This cop checks for calling a block within a stub."
+RSpec/Capybara/CurrentPathExpectation: "Checks that no expectations are set on Capybara's `current_path`."
+RSpec/Capybara/FeatureMethods: "Checks for consistent method usage in feature specs."
+RSpec/Capybara/VisibilityMatcher: "Checks for boolean visibility in capybara finders."
+RSpec/FactoryBot/AttributeDefinedStatically: "Always declare attribute values as blocks."
+RSpec/FactoryBot/CreateList: "Checks for create_list usage."
+RSpec/FactoryBot/FactoryClassName: "Use string value when setting the class attribute explicitly."
+RSpec/Rails/HttpStatus: "Enforces use of symbolic or numeric value to describe HTTP status."
+Performance/AncestorsInclude: 'Use `A <= B` instead of `A.ancestors.include?(B)`.'
+Performance/ArraySemiInfiniteRangeSlice: 'Identifies places where slicing arrays with semi-infinite ranges can be replaced by `Array#take` and `Array#drop`.'
+Performance/BigDecimalWithNumericArgument: 'Convert numeric argument to string before passing to BigDecimal.'
+Performance/BindCall: 'Use `bind_call(obj, args, ...)` instead of `bind(obj).call(args, ...)`.'
+Performance/BlockGivenWithExplicitBlock: 'Check block argument explicitly instead of using `block_given?`.'
+Performance/Caller: "Use `caller(n..n)` instead of `caller`."
+Performance/CaseWhenSplat: "Reordering `when` conditions with a splat to the end of the `when` branches can improve performance."
+Performance/Casecmp: "Use `casecmp` rather than `downcase ==`, `upcase ==`, `== downcase`, or `== upcase`.."
+Performance/ChainArrayAllocation: "Instead of chaining array methods that allocate new arrays, mutate an existing array."
+Performance/CollectionLiteralInLoop: 'Extract Array and Hash literals outside of loops into local variables or constants.'
+Performance/CompareWithBlock: 'Use `sort_by(&:foo)` instead of `sort { |a, b| a.foo <=> b.foo }`.'
+Performance/ConstantRegexp: 'Finds regular expressions with dynamic components that are all constants.'
+Performance/Count: "Use `count` instead of `{select,find_all,filter,reject}...{size,count,length}`."
+Performance/DeletePrefix: 'Use `delete_prefix` instead of `gsub`.'
+Performance/DeleteSuffix: 'Use `delete_suffix` instead of `gsub`.'
+Performance/Detect: "Use `detect` instead of `select.first`, `find_all.first`, `filter.first`, `select.last`, `find_all.last`, and `filter.last`."
+Performance/DoubleStartEndWith: "Use `str.{start,end}_with?(x, ..., y, ...)` instead of `str.{start,end}_with?(x, ...) || str.{start,end}_with?(y, ...)`."
+Performance/EndWith: 'Use `end_with?` instead of a regex match anchored to the end of a string.'
+Performance/FixedSize: 'Do not compute the size of statically sized objects except in constants.'
+Performance/FlatMap: "Use `Enumerable#flat_map` instead of `Enumerable#map...Array#flatten(1)` or `Enumberable#collect..Array#flatten(1)`."
+Performance/InefficientHashSearch: 'Use `key?` or `value?` instead of `keys.include?` or `values.include?`.'
+Performance/IoReadlines: 'Use `IO.each_line` (`IO#each_line`) instead of `IO.readlines` (`IO#readlines`).'
+Performance/MethodObjectAsBlock: 'Use block explicitly instead of block-passing a method object.'
+Performance/OpenStruct: 'Use `Struct` instead of `OpenStruct`.'
+Performance/RangeInclude: 'Use `Range#cover?` instead of `Range#include?` (or `Range#member?`).'
+Performance/RedundantBlockCall: 'Use `yield` instead of `block.call`.'
+Performance/RedundantMatch: "Use `=~` instead of `String#match` or `Regexp#match` in a context where the returned `MatchData` is not needed."
+Performance/RedundantMerge: 'Use Hash#[]=, rather than Hash#merge! with a single key-value pair.'
+Performance/RedundantSortBlock: 'Use `sort` instead of `sort { |a, b| a <=> b }`.'
+Performance/RedundantStringChars: 'Checks for redundant `String#chars`.'
+Performance/RegexpMatch: "Use `match?` instead of `Regexp#match`, `String#match`, `Symbol#match`, `Regexp#===`, or `=~` when `MatchData` is not used."
+Performance/ReverseEach: 'Use `reverse_each` instead of `reverse.each`.'
+Performance/ReverseFirst: 'Use `last(n).reverse` instead of `reverse.first(n)`.'
+Performance/Size: "Use `size` instead of `count` for counting the number of elements in `Array` and `Hash`."
+Performance/SortReverse: 'Use `sort.reverse` instead of `sort { |a, b| b <=> a }`.'
+Performance/Squeeze: "Use `squeeze('a')` instead of `gsub(/a+/, 'a')`."
+Performance/StartWith: 'Use `start_with?` instead of a regex match anchored to the beginning of a string.'
+Performance/StringInclude: 'Use `String#include?` instead of a regex match with literal-only pattern.'
+Performance/StringReplacement: "Use `tr` instead of `gsub` when you are replacing the same number of characters. Use `delete` instead of `gsub` when you are deleting characters."
+Performance/Sum: 'Use `sum` instead of a custom array summation.'
+Performance/TimesMap: 'Checks for .times.map calls.'
+Performance/UnfreezeString: 'Use unary plus to get an unfrozen string literal.'
+Performance/UriDefaultParser: 'Use `URI::DEFAULT_PARSER` instead of `URI::Parser.new`.'

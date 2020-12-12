@@ -3,8 +3,7 @@
 cat cops.txt | while read cop
 do
   BRANCH_NAME="fix-${cop}"
-  cop_description=`awk -F"${cop}: " '{print $2}' cop_descriptions.yml | sed '/^[[:space:]]*$/d'`
-  echo ${cop_description}
+  cop_description=`awk -F"${cop}: " '{print $2}' cops_descriptions.yml | sed '/^[[:space:]]*$/d'`
 
   git checkout master
   git pull origin master
@@ -21,7 +20,7 @@ do
   bundle exec rubocop --auto-gen-config --auto-gen-only-exclude --exclude-limit=10000
 
   # add cop to .rubocop.strict
-  echo -e "\n${cop}:\n  Description: ${cop_description}\n  Enabled: true\n" >> .rubocop_strict.yml
+  echo -e "\n${cop}:\n  Description: ${cops_description}\n  Enabled: true\n" >> .rubocop_strict.yml
 
   # add changes
   git add .
@@ -37,7 +36,7 @@ do
 
   # commit and open PR
   git commit -m "[RUBOCOP] Fix cop ${cop}"
-  git push origin $BRANCH_NAME --no-verify -f
+  git push origin $BRANCH_NAME --no-verify
   gh pr create --fill
 
   # return to main branch
